@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-busqueda',
@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class BusquedaComponent implements OnInit {
+export class BusquedaComponent {
 
-  constructor() { }
+    @ViewChild('txtBuscar') txtBuscar: any;
 
-  ngOnInit(): void {
-  }
+    buscar(termino: string){
+        console.log(termino);
+    }
 
+    constructor() { };
 }

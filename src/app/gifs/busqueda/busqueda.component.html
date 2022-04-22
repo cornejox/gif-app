@@ -1,2 +1,7 @@
 <h5>Buscar:</h5>
-<input type="text" class="form-control" placeholder="Buscar giffs...">
+<input 
+    (keyup.enter)="buscar(txtBuscar.value)"
+    #txtBuscar
+    type="text" 
+    class="form-control" 
+    placeholder="Buscar giffs...">
